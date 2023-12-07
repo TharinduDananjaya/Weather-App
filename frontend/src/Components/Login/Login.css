@@ -1,0 +1,92 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Light gray background */
+  }
+  
+  .login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888888;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  input:focus + label,
+  input:valid + label {
+    top: 0;
+    font-size: 14px;
+    color: #555555;
+  }
+  
+  .error {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  button:disabled {
+    background: #a0a0a0;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background: #267db5;
+  }
+  
+  .success {
+    color: #4caf50;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

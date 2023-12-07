@@ -1,10 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import Dashboard from './pages/Dashboard';
+import Login from './Components/Login/Login';
+import WeatherApp from './Components/WeatherApp/WeatherApp';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Protected from './utils/Protected';
+
 
 function App() {
+
+  const router = createBrowserRouter([
+    {path:"/", element:<Protected component={WeatherApp}/>},
+    {path:"/login", element:<Login/>}
+    
+  ]);
+
   return (
-    <Dashboard/>
+    <RouterProvider router={router}/>
   );
 }
 
